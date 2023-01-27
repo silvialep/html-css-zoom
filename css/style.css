@@ -6,3 +6,36 @@
     box-sizing: border-box;
 }
 
+#page-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#schermata-video {
+    height: 90%;
+    position: relative;
+    display: flex;
+
+    /* debug */
+    background-color:deepskyblue;
+}
+
+#barra-comandi {
+    height: 10%;
+
+    /* debug */
+    background-color: dodgerblue;
+}
+
+.contenitore-video {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+
+
+    /* debug */
+    background-color: burlywood;
+}
