@@ -27,9 +27,6 @@
 }
 
 a:link {
-    font-weight: 600;
-    font-size: 0.8em;
-    color: white;
     text-decoration: none;
 }
 
@@ -37,11 +34,17 @@ a:visited {
     color: white;
 }
 
+.didascalie {
+    font-weight: 600;
+    font-size: 0.8em;
+    color: white;
+    padding: 2px 4px;
+    line-height: 1em;
+}
+
 .modifica-vista, .allarga-schermo {
     background-color: rgb(74, 74, 74);
-    padding: 2px 4px;
     border-radius: 5px;
-    line-height: 1em;
 }
 
 .contenitore-video {
@@ -52,18 +55,16 @@ a:visited {
     flex-wrap: wrap;
     gap: 3px;
 
-    overflow-y: auto;
+    /* overflow-y: auto; */
     
     position: absolute;
     top: 8%;
     left: 5%;
 
-
-    /* debug */
-    background-color: burlywood;
 }
 
 .card-video {
+    position: relative;
     width: calc(100% / 7 - 3px);
     height: calc(100% / 5 - 3px);
     min-width: 100px;
@@ -74,6 +75,16 @@ a:visited {
     height: 100%;
     background-size: cover;
 }
+
+.didascalie.username {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(74, 74, 74, 0.5);
+    padding: 5px;
+}
+
+
 
 
 
