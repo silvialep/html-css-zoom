@@ -54,9 +54,10 @@ a:visited {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 3px;
 
-    /* overflow: auto; */
+    overflow: auto;
 
     position: absolute;
     top: 8%;
@@ -68,13 +69,14 @@ a:visited {
     position: relative;
     width: calc(100% / 7 - 3px);
     height: calc(100% / 5 - 3px);
-    min-width: 100px;
+    min-width: 200px;
 }
 
 .card-video img {
+    overflow: hidden;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    object-fit: cover;
 }
 
 .didascalie.username {
